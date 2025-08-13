@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedar Rapids STEM Circle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="src/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img class="h-16 mr-4 rounded-full" src="src/logo.webp" alt="Cedar Rapids STEM Circle Logo">
+                    <h1 class="text-2xl font-bold gradient-text">Cedar Rapids STEM Circle</h1>
+                </div>
+                <nav class="mt-5 lg:mt-0">
+                    <ul class="flex flex-wrap justify-center gap-6 lg:gap-8">
+                        <li><a href="#about" class="nav-link relative font-semibold text-gray-700 hover:text-stem-blue transition-colors duration-300"><i class="fas fa-info-circle mr-1"></i> About</a></li>
+                        <li><a href="#instructors" class="nav-link relative font-semibold text-gray-700 hover:text-stem-blue transition-colors duration-300"><i class="fas fa-users mr-1"></i> Instructors</a></li>
+                        <li><a href="#events" class="nav-link relative font-semibold text-gray-700 hover:text-stem-blue transition-colors duration-300"><i class="fas fa-calendar-alt mr-1"></i> Events</a></li>
+                        <li><a href="#contact" class="nav-link relative font-semibold text-gray-700 hover:text-stem-blue transition-colors duration-300"><i class="fas fa-envelope mr-1"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="hero-bg text-white text-center pt-44 pb-28 mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 drop-shadow-lg animate-fade-in-down">Igniting Passion for STEM in Cedar Rapids</h2>
+            <p class="text-[1.1rem] md:text-xl max-w-4xl mx-auto mb-10 animate-fade-in-up">
+                Cedar Rapids STEM Circle provides hands-on learning experiences in 
+                <span class="inline-block bg-stem-blue text-white px-3 py-1 rounded-full font-semibold mx-1">Science</span>, 
+                <span class="inline-block bg-stem-green text-white px-3 py-1 rounded-full font-semibold mx-1">Technology</span>, 
+                <span class="inline-block bg-stem-red text-white px-3 py-1 rounded-full font-semibold mx-1">Engineering</span>, and 
+                <span class="inline-block bg-stem-purple text-white px-3 py-1 rounded-full font-semibold mx-1">Mathematics</span> 
+                for students of all ages. Join our community of innovators!
+            </p>
+            <div class="animate-fade-in">
+                <a href="#events" class="inline-block bg-stem-red text-white px-9 py-4 rounded-lg font-bold text-[1.1rem] m-2 transition-all duration-300 hover:bg-red-800 hover:-translate-y-1 hover:shadow-2xl">View Upcoming Events</a>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-stem-blue mb-4 relative inline-block pb-4">
+                    About Our STEM Circle
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-stem-blue via-stem-green to-stem-purple rounded"></div>
+                </h2>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <p class="mb-5 text-[1.1rem] leading-relaxed">The Cedar Rapids STEM Circle is a community-driven initiative dedicated to inspiring the next generation of scientists, engineers, and innovators. We create engaging experiences that make STEM accessible and exciting for students from middle school through high school.</p>
+                    <p class="mb-5 text-[1.1rem] leading-relaxed">Through workshops, projects, and collaborative problem-solving, we help students develop critical thinking skills and discover real-world applications of STEM principles. Our approach emphasizes creativity, experimentation, and hands-on learning.</p>
+                    <p class="mb-8 text-[1.1rem] leading-relaxed">We welcome students of all backgrounds and experience levels. Whether you're a STEM enthusiast or just beginning to explore these fields, our circle provides a supportive environment for discovery and growth.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="bg-blue-50 text-stem-blue p-6 rounded-xl text-center transition-transform duration-300 hover:-translate-y-2">
+                            <i class="fas fa-flask text-4xl mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Science</h3>
+                            <p class="text-sm">Explore biology, chemistry, physics & environmental science</p>
+                        </div>
+                        <div class="bg-green-50 text-stem-green p-6 rounded-xl text-center transition-transform duration-300 hover:-translate-y-2">
+                            <i class="fas fa-laptop-code text-4xl mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Technology</h3>
+                            <p class="text-sm">Coding, robotics, AI, and digital innovation</p>
+                        </div>
+                        <div class="bg-red-50 text-stem-red p-6 rounded-xl text-center transition-transform duration-300 hover:-translate-y-2">
+                            <i class="fas fa-cogs text-4xl mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Engineering</h3>
+                            <p class="text-sm">Design, build, and test innovative solutions</p>
+                        </div>
+                        <div class="bg-purple-50 text-stem-purple p-6 rounded-xl text-center transition-transform duration-300 hover:-translate-y-2">
+                            <i class="fas fa-calculator text-4xl mb-4"></i>
+                            <h3 class="font-bold text-xl mb-2">Mathematics</h3>
+                            <p class="text-sm">Problem-solving and analytical thinking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white transition-transform duration-500 hover:scale-105">
+                        <div class="h-screen w-full overflow-hidden">
+                            <img class="w-full h-full object-cover" src="src/class.webp" alt="Students learning in our class">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instructors" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-stem-blue mb-4 relative inline-block pb-4">
+                    Our Student Mentors
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-stem-blue via-stem-green to-stem-purple rounded"></div>
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Abhay Suri">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Abhay Suri</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Organizer</div>
+                        <p class="text-gray-600">Abhay is a rising sophomore at Linn-Mar High School. He is interested in computer science with experience in competitive programming and web development. He enjoys biking and soccer in his free time.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yihan Richard Weng">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Yihan Richard Weng</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Organizer</div>
+                        <p class="text-gray-600">Yihan Richard Weng will be a Sophomore at Linn-Mar High School this fall. He is interested in CS and Math, and participates in various competitions. He likes to solve puzzles in his free time.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1542178243-bc20204b769f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ahmed Rifaat Asic Abuthahir">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Ahmed Rifaat Asic Abuthahir</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Computer Science & Engineering Mentor</div>
+                        <p class="text-gray-600">bio</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ethan Weng">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Ethan Weng</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Math & Biology Mentor</div>
+                        <p class="text-gray-600">Ethan is a rising freshmen at Linn-Mar High School. He captained his school's MathCounts team. Outside of math, Ethan enjoys running, playing the violin, and Biology.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="George Joseph">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">George Joseph</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Biology & Chemistry Mentor</div>
+                        <p class="text-gray-600">George is a rising sophomore passionate about biology. He excels in advanced courses and leads Science Olympiad, HOSA, and Red Cross. George seeks to become an anesthesiologist.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kushagra Singh">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Kushagra Singh</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Physics & Engineering Mentor</div>
+                        <p class="text-gray-600">bio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="events" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-stem-blue mb-4 relative inline-block pb-4">
+                Upcoming STEM Events
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-stem-blue via-stem-green to-stem-purple rounded"></div>
+            </h2>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl flex flex-col h-full flex-1 min-w-[300px] max-w-[400px]">
+                <div class="bg-gradient-to-r from-stem-red to-red-700 text-white p-6 text-center">
+                    <div class="text-2xl font-bold mb-1">August 18 - August 22</div>
+                    <div class="text-[1.1rem] opacity-90">9:30 AM - 11:30 AM</div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-xl font-bold text-stem-blue mb-4 text-center">Web Development Class</h3>
+                    <p class="text-gray-600 mb-6 flex-grow text-center">
+                        A fun, interactive class teaching web technologies such as HTML, CSS, and JavaScript.
+                    </p>
+                    <ul class="space-y-3 mb-6 flex-grow">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-map-marker-alt text-stem-red mr-3 text-center"></i>
+                            Cedar Rapids Public Library<br> Beems Auditorium A
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-users text-stem-red mr-3 text-center"></i>
+                           5th - 9th graders
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-hard-hat text-stem-red mr-3 text-center"></i>
+                            Bring a laptop, or a library card, to check one out.
+                        </li>
+                    </ul>
+                    <div class="text-center mt-auto">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScWokiqaWkmmqwv-47AdCCOVPhoFesnRKVZZMwvGjdsnJPLjQ/viewform"
+                           class="inline-block bg-stem-yellow text-gray-800 px-8 py-3 rounded-lg font-bold transition-all duration-300 hover:bg-yellow-600 hover:-translate-y-1">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer id="contact" class="bg-gradient-to-r from-stem-blue to-stem-purple text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 relative pb-3">
+                        Cedar Rapids STEM Circle
+                        <div class="absolute bottom-0 left-0 w-16 h-1 bg-stem-yellow rounded"></div>
+                    </h3>
+                    <p class="mb-5 opacity-90 leading-relaxed">Inspiring innovation and discovery through hands-on STEM education for Cedar Rapids youth.</p>
+                    <div class="flex gap-4 mt-5">
+                        <a href="https://www.instagram.com/cedarrapidsstemcircle?igsh=MWNydGxmNnlqNzN5" class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full text-white transition-all duration-300 hover:bg-stem-yellow hover:text-gray-800 hover:-translate-y-1">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Cedar-Rapids-STEM-Circle"class="flex items-center justify-center w-10 h-10 bg-white bg-opacity-10 rounded-full text-white transition-all duration-300 hover:bg-stem-yellow hover:text-gray-800 hover:-translate-y-1">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 relative pb-3">
+                        Contact Information
+                        <div class="absolute bottom-0 left-0 w-16 h-1 bg-stem-yellow rounded"></div>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fas fa-envelope text-stem-yellow mr-3 w-5"></i>
+                                crstemcircle@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fas fa-phone text-stem-yellow mr-3 w-5"></i>
+                                319-775-0760
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 relative pb-3">
+                        Quick Links
+                        <div class="absolute bottom-0 left-0 w-16 h-1 bg-stem-yellow rounded"></div>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="#about" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fas fa-chevron-right text-stem-yellow mr-3 w-5"></i>
+                                About Our Program
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#instructors" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fas fa-chevron-right text-stem-yellow mr-3 w-5"></i>
+                                Meet Our Mentors
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#events" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fas fa-chevron-right text-stem-yellow mr-3 w-5"></i>
+                                Upcoming Events
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-10 border-t border-white border-opacity-15 opacity-80 text-sm">
+                <p>Designed with <i class="fas fa-heart text-stem-red mx-1"></i> by <a target="_blank" href="https://github.com/absuii">Abhay Suri</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="module" src="src/index.js"></script>
+</html>
