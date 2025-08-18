@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('image-carousel');
+            const track = document.getElementById('carousel-track');
+            const slides = Array.from(track.children);
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            let currentSlide = 0;
+            const slideCount = slides.length;
+            const updateCarousel = () => {
+                const offset = -currentSlide * 100;
+                track.style.transform = `translateX(${offset}%)`;
+            };
+            nextBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % slideCount;
+                updateCarousel();
+            });
+            prevBtn.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+                updateCarousel();
+            });
+            updateCarousel();
+ });
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
