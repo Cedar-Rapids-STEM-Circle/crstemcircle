@@ -5,6 +5,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/math",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSecpwYInMr3KasvAXAonu3vWwkKXdpGn3TiaLHsyz5p4CIxiQ/viewform?usp=header",
+        "type": 302
+      }
     ]
   }
 }
