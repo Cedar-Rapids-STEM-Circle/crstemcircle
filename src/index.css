@@ -25,3 +25,14 @@
 .nav-link:hover::after {
     width: 100%;
 }
+
+:root {
+    --header-height: 64px;
+}
+
+section[id],
+div[id],
+h2[id],
+h3[id] {
+    scroll-margin-top: calc(var(--header-height) + 12px);
+}
