@@ -7,6 +7,13 @@
     <link rel="icon" href="src/logo.webp" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="google-site-verification" content="YC21OcMz0CuC6VpXSYk4jW8jBzu5UFe1tIouiueBnOA" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1PBTXPGXR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q1PBTXPGXR');
+    </script>
     <link rel="stylesheet" href="src/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -40,8 +47,9 @@
                 <span class="inline-block bg-stem-purple text-white px-3 py-1 rounded-full font-semibold mx-1">Mathematics</span> 
                 for students of all ages. We hold free monthly STEM events the last weekend of every month!
             </p>
-            <div class="animate-fade-in">
-                <a href="#events" class="inline-block bg-stem-red text-white px-9 py-4 rounded-lg font-bold text-[1.1rem] m-2 transition-all duration-300 hover:bg-red-800 hover:-translate-y-1 hover:shadow-2xl">View Upcoming Events</a>
+            <div class="animate-fade-in flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="#events" class="inline-block bg-stem-red text-white px-9 py-4 rounded-lg font-bold text-[1.1rem] transition-all duration-300 hover:bg-red-800 hover:-translate-y-1 hover:shadow-2xl">View Upcoming Events</a>
+                <a href="https://chat.whatsapp.com/EoPUHxU94SM8y0hTI05rCi?mode=gi_t" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#25D366] text-white px-8 py-4 rounded-lg font-bold text-[1.1rem] transition-all duration-300 hover:bg-[#1ebe57] hover:-translate-y-1 hover:shadow-2xl">Join Our WhatsApp Group</a>
             </div>
         </div>
     </section>
@@ -58,7 +66,7 @@
                 <p class="mb-8 text-[1.1rem] leading-relaxed">
                     The Cedar Rapids STEM Circle inspires middle and high school students through hands-on workshops, collaborative projects, and creative problem-solving, helping them explore science, technology, engineering, and math in a supportive, engaging environment.
                 </p>
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div class="p-6 bg-stem-blue text-white rounded-2xl shadow-lg text-center flex flex-col items-center">
                         <i class="fas fa-flask text-3xl mb-4"></i>
                         <h3 class="text-xl font-bold mb-2">Science</h3>
@@ -90,7 +98,7 @@
 
         <!-- Biology Workshop 2026 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/bio1-26.webp" alt="Students working on a robotics project">
             </div>
             <div class="p-4 text-center">
@@ -101,7 +109,7 @@
 
         <!-- Anatomy Workshop 2026 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/anatomy1-26.webp" alt="Students working on a robotics project">
             </div>
             <div class="p-4 text-center">
@@ -112,7 +120,7 @@
 
         <!-- Java Workshop 2026 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/java26.jpg" alt="Students working on a robotics project">
             </div>
             <div class="p-4 text-center">
@@ -123,7 +131,7 @@
 
         <!-- Math Class 2025 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/math25.jpg" alt="Students working on a robotics project">
             </div>
             <div class="p-4 text-center">
@@ -134,7 +142,7 @@
 
         <!-- Coding Camp 2025 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/coding25.png" alt="Students working on a robotics project">
             </div>
             <div class="p-4 text-center">
@@ -145,7 +153,7 @@
 
         <!-- Science Camp 2025 -->
         <div class="w-full flex-shrink-0 flex flex-col items-center">
-            <div class="w-full h-[60vh] overflow-hidden">
+            <div class="w-full h-72 sm:h-[60vh] overflow-hidden">
                 <img class="w-full h-full object-cover" src="src/science25.webp" alt="Students learning in our science class">
             </div>
             <div class="p-4 text-center">
@@ -183,8 +191,7 @@
     </div>
 
     
-      <div
-        class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl flex flex-col h-full flex-1 min-w-[300px] max-w-[400px]">
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl w-full max-w-xl mx-auto">
         <div class="bg-gradient-to-r from-stem-red to-red-700 text-white p-6 text-center">
           <div class="text-2xl font-bold mb-1">April 4th</div>
           <div class="text-[1.1rem] opacity-90">1:00-3:00 PM</div>
@@ -273,7 +280,7 @@
                     </div>
                     <div class="p-6 flex-1">
                         <h3 class="text-2xl font-bold text-stem-blue mb-1">Sanjay Boddu</h3>
-                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Social Media Manager and Mentor</div>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Social Media Manager</div>
                         <p class="text-gray-600 hidden sm:block">Sanjay Boddy is a sophomore at Linn-Mar High School. He is interested in physics and mechanics. He likes to play the trumpet and play tennis in his free time.</p>
                     </div>
                 </div>
@@ -285,6 +292,16 @@
                         <h3 class="text-2xl font-bold text-stem-blue mb-1">Arya Ravikumar</h3>
                         <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Communications Lead</div>
                         <p class="text-gray-600 hidden sm:block ">Arya is a sophomore at Linn-Mar High school. He is interested in becoming a doctor and does several medical activites. He also enjoys studying, playing the violin, and eating.</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
+                    <div class="md:w-48 h-48 md:h-auto overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" src="src/dhruv.png" alt="Dhruv Katragadda">
+                    </div>
+                    <div class="p-6 flex-1">
+                        <h3 class="text-2xl font-bold text-stem-blue mb-1">Dhruv Katragadda</h3>
+                        <div class="text-stem-red font-bold mb-2 text-[1.1rem]">Lead Advertiser</div>
+                        <p class="text-gray-600 hidden sm:block">Dhruv Katragadda is a sophomore at Linn-Mar High School. He is interested in STEM and business. He likes to play his instrument, the saxophone and sleep in his free time.</p>
                     </div>
                 </div>
                 <div class="bg-gradient-to-b from-white to-blue-50 rounded-2xl shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-4 flex flex-col md:flex-row">
@@ -381,6 +398,12 @@
                             <a href="#events" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
                                 <i class="fas fa-chevron-right text-stem-yellow mr-3 w-5"></i>
                                 Upcoming Events
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://chat.whatsapp.com/EoPUHxU94SM8y0hTI05rCi?mode=gi_t" target="_blank" rel="noopener noreferrer" class="flex items-center text-white opacity-90 transition-opacity duration-300 hover:opacity-100 hover:underline">
+                                <i class="fab fa-whatsapp text-stem-yellow mr-3 w-5"></i>
+                                Join our WhatsApp Group
                             </a>
                         </li>
                     </ul>

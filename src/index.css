@@ -39,3 +39,7 @@ h3[id] {
 html {
   scroll-padding-top: 80px; 
 }
+
+body {
+  overflow-x: hidden;
+}
