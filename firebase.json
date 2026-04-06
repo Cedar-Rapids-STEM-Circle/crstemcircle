@@ -8,8 +8,8 @@
     ],
     "redirects": [
       {
-        "source": "/math",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSecpwYInMr3KasvAXAonu3vWwkKXdpGn3TiaLHsyz5p4CIxiQ/viewform?usp=header",
+        "source": "/signup",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSe4TsXYQ1tOl8KoPx970e1iAHAOwQvULpSXKfMJLrijkkXvVw/viewform?usp=dialog",
         "type": 302
       }
     ]
