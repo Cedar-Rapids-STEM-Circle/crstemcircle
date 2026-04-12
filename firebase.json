@@ -11,6 +11,11 @@
         "source": "/signup",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSe4TsXYQ1tOl8KoPx970e1iAHAOwQvULpSXKfMJLrijkkXvVw/viewform?usp=dialog",
         "type": 302
+      },
+      {
+        "source": "/**",
+        "destination": "https://crstemcircle.org/:splat",
+        "type": 301
       }
     ]
   }
