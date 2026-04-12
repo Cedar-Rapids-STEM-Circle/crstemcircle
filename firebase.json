@@ -14,7 +14,7 @@
       },
       {
         "source": "/**",
-        "destination": "https://crstemcircle.org/",
+        "destination": "https://crstemcircle.org/:splat",
         "type": 301
       }
     ]
