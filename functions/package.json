@@ -1,0 +1,12 @@
+{
+  "name": "functions",
+  "description": "Firebase Functions for host-aware redirect",
+  "private": true,
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-functions": "^4.4.0"
+  }
+}
