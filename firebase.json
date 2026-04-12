@@ -1,11 +1,29 @@
 {
-  "hosting": {
-    "site": "cedarrapidsstemcircle",
-    "public": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+  "hosting": [
+    {
+      "site": "cedarrapidsstemcircle",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "redirects": [
+        {
+          "source": "/**",
+          "destination": "https://crstemcircle.org",
+          "type": 301
+        }
+      ]
+    },
+    {
+      "site": "crstemcircle",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
 }
