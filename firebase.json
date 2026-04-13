@@ -7,6 +7,13 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "/signup",
+        "destination": "https://forms.gle/ew8wsfK2st7uBZFF6",
+        "type": 302
+      }
+    ],
     "rewrites": [
       {
         "source": "**",
