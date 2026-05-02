@@ -10,7 +10,7 @@
     "redirects": [
       {
         "source": "/signup",
-        "destination": "https://forms.gle/ew8wsfK2st7uBZFF6",
+        "destination": "/#events",
         "type": 302
       }
     ],
