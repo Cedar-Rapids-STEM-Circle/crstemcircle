@@ -27,7 +27,7 @@
 }
 
 :root {
-    --header-height: 64px;
+    --header-height: 48px;
 }
 
 section[id],
@@ -37,7 +37,7 @@ h3[id] {
     scroll-margin-top: calc(var(--header-height) + 12px);
 }
 html {
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 60px; 
 }
 
 body {
