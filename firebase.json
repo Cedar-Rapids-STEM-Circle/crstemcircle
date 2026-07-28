@@ -12,6 +12,11 @@
         "source": "/signup",
         "destination": "/#events",
         "type": 302
+      },
+      {
+        "source": "/python",
+        "destination": "https://docs.google.com/document/d/1tGRKxT4-7agqX6RB75hJpdLqm3xSuUHm97DEdu4ygcs/edit?usp=sharing",
+        "type": 302
       }
     ],
     "rewrites": [
