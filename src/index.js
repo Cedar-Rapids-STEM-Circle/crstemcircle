@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const container = document.getElementById('events-container');
                     if(!container) return;
 
-                    const today = new Date();
+                    const now = new Date();
+
                     function parseDate(str){
                         if(!str) return null;
                         const parts = str.split('/').map(s=>s.trim());
@@ -38,12 +39,38 @@ document.addEventListener('DOMContentLoaded', () => {
                         return new Date(yy, mm, dd);
                     }
 
-                    events.forEach(ev => {
+                    function parseEventStart(ev){
                         const eventDate = parseDate(ev.date);
-                        if(!eventDate) return;
-                        const formattedDate = eventDate.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
-                        const diffDays = Math.floor((today - eventDate) / (1000*60*60*24));
-                        if(diffDays > 1) return; // hide events more than 1 day past
+                        if(!eventDate) return null;
+
+                        const timeText = String(ev.time || '').trim();
+                        if(!timeText) {
+                            const startOfDay = new Date(eventDate);
+                            startOfDay.setHours(0, 0, 0, 0);
+                            return startOfDay;
+                        }
+
+                        const timeMatch = timeText.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+                        if(!timeMatch) return eventDate;
+
+                        let hour = parseInt(timeMatch[1], 10);
+                        const minute = parseInt(timeMatch[2], 10);
+                        const meridiem = (timeMatch[3] || '').toUpperCase();
+
+                        if(meridiem === 'PM' && hour < 12) hour += 12;
+                        if(meridiem === 'AM' && hour === 12) hour = 0;
+
+                        const eventDateTime = new Date(eventDate);
+                        eventDateTime.setHours(hour, minute, 0, 0);
+                        return eventDateTime;
+                    }
+
+                    events.forEach(ev => {
+                        const eventStart = parseEventStart(ev);
+                        if(!eventStart) return;
+
+                        const formattedDate = eventStart.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
+                        if(eventStart < now) return; // hide events that started in the past
 
                         const card = document.createElement('div');
                         card.className = 'bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl';
