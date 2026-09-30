@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     events.forEach(ev => {
                         const eventStart = parseEventStart(ev);
                         if(!eventStart) return;
+                        if(ev.display === false) return;
 
                         const formattedDate = eventStart.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
                         if(eventStart < now) return; // hide events that started in the past

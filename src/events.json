@@ -7,7 +7,8 @@
     "materials": "No materials required",
     "Workshop": "Robotics Engineering Workshop",
     "description": "Join Leopard Robotics for a hands-on engineering challenge where participants build a bridge and explore the basics of engineering, robotics, and physics in a fun, interactive way.",
-    "link": "https://docs.google.com/forms/d/e/1FAIpQLSfdsGZswFw6LOJtBBBuch-mvA9WdaFzE70b9FjUyGWjGW667A/viewform?usp=publish-editor"
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSfdsGZswFw6LOJtBBBuch-mvA9WdaFzE70b9FjUyGWjGW667A/viewform?usp=publish-editor",
+    "display": false
   },
   {
     "date": "10/03/26",
@@ -17,7 +18,8 @@
     "materials": "No materials needed",
     "Workshop": "Science Workshop",
     "description": "Explore exciting science concepts through hands-on activities designed to spark curiosity, encourage discovery, and make learning fun.",
-    "link": "https://forms.gle/d6MZTxQdRohks4797"
+    "link": "https://forms.gle/d6MZTxQdRohks4797",
+    "display": false
   },
   {
     "date": "10/17/26",
@@ -27,6 +29,7 @@
     "materials": "No materials needed",
     "Workshop": "Math Workshop",
     "description": "Enjoy a welcoming and interactive math workshop with approachable activities and puzzles that help participants build confidence and explore the joy of problem-solving.",
-    "link": "https://docs.google.com/forms/d/e/1FAIpQLSebae-uzBRx1Bn0J_IX4QCaQV7BWii5C8f6V8uIuneFlHQVoQ/viewform?usp=dialog"
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSebae-uzBRx1Bn0J_IX4QCaQV7BWii5C8f6V8uIuneFlHQVoQ/viewform?usp=dialog",
+    "display": true
   }
 ]
