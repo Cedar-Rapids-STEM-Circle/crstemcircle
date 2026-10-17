@@ -71,7 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         if(ev.display === false) return;
 
                         const formattedDate = eventStart.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
-                        if(eventStart < now) return; // hide events that started in the past
+
+                        const today = new Date(now);
+                        today.setHours(0, 0, 0, 0);
+                        const eventDay = new Date(eventStart);
+                        eventDay.setHours(0, 0, 0, 0);
+
+                        if(eventDay < today) return; // keep same-day events visible, hide only past dates
 
                         const card = document.createElement('div');
                         card.className = 'bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl';
